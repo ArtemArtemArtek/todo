@@ -1,15 +1,3 @@
-// import React, {FC} from "react";
-
-// const LoginPage:FC=()=>{
-    
-    
-//     return(<>
-//     Login page
-//     </>)
-// }
-
-// export default LoginPage
-
 import React, { FC } from "react";
 import { Layout, Row, Card } from "antd";
 import LoginPage from "../components/LoginPage.tsx";

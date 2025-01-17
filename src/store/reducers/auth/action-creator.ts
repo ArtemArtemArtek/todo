@@ -2,7 +2,6 @@ import { SetAuthAction, SetErrorAction, SetUserAction, SetIsLoadingAction, Actio
 import { IUser } from "../../../models/IUser"
 import { AppDispatch } from "../../store.tsx"
 import UserService from "../../../api/UserService.tsx"
-import axios from "axios"
 
 export const AuthActionCreators = {
     setUser: (user: IUser): SetUserAction => ({ type: ActionTypesEnum.SET_USER, payload: user }),

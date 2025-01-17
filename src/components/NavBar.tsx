@@ -9,11 +9,9 @@ import { AuthActionCreators } from "../store/reducers/auth/action-creator.ts";
 const NavBar: FC = () => {
     const navigate = useNavigate()
     const dispatch = useAppDispatch()
- 
     const {isAuth, user} = useAppSelector(state=>state.auth)
 
-    return (
-        
+    return (        
         <Header >
             <Row justify="end">
                 {isAuth ?
@@ -24,11 +22,9 @@ const NavBar: FC = () => {
                         </Menu>
                     </>
                     :
-
                     <Menu theme="dark" mode="horizontal" selectable={false}>
                         <Menu.Item style={{ width: 1 }} key={1} onClick={() => navigate(RoutesName.LOGIN)}>Войти</Menu.Item>
                     </Menu>
-
                 }
             </Row>
         </Header>
