@@ -14,4 +14,4 @@ axios-для запросов на сервер(users.json)
 
 Использована библиотека antd design для UI
 
-react-router-dom-для организатии роутинга
+react-router-dom-для организации роутинга
